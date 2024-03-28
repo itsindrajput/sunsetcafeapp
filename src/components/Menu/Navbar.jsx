@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import style from "../../pages/Authentication/Signup.module.css";
+// import style from "../../pages/Authentication/Signup.module.css";
+import style from "./navbar.module.css";
 
 const Navbar = () => {
   function myHamburger() {
@@ -33,7 +34,7 @@ const Navbar = () => {
     <header className={style.header}>
       <nav className={style.nav}>
         <div className={style.logoHamburgerContainer}>
-          <NavLink to="/" className={"nav-logo"}>
+          <NavLink to="/" className={style.nav_logo}>
             <img
               src="../other-images/sunsetLogo1.png"
               alt="Image contains the logo of Sunset Cafe"
@@ -41,12 +42,12 @@ const Navbar = () => {
           </NavLink>
           {/* Hamburger icon and a search icon */}
           <div className={"nav-icons"}>
-            <div className={"search-icon"}>
+            <div className={style.search_icon}>
               <NavLink to="/signup">
                 <FontAwesomeIcon icon={faSearch} />
               </NavLink>
             </div>
-            <div className={"hamburger-icon"} onClick={myHamburger}>
+            <div className={style.hamburger_icon} onClick={myHamburger}>
               <div className="bar" />
               <div className="bar" />
               <div className="bar" />
@@ -61,7 +62,7 @@ const Navbar = () => {
             <h3>SUNSET</h3>
             <h2>CAFE</h2>
           </div>
-          <div className={"nav-menu-list"}>
+          <div className={style.nav_menu_list}>
             <ul>
               <li>
                 <NavLink to="/">Home</NavLink>

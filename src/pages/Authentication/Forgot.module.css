@@ -1,0 +1,269 @@
+/*Style for the Forgot Page begins here*/
+.forgot_form_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4.5%;
+  padding-bottom: 3%;
+  width: 100%;
+  height: auto;
+}
+.forgot_img_mobile {
+  display: none;
+}
+.forgot_img {
+  width: 45%;
+  height: 65vh;
+}
+.forgot_img img {
+  width: 100%;
+  height: 65vh;
+  object-fit: fill;
+}
+.forgot_form {
+  width: 55%;
+  height: 65vh;
+}
+.forgot_form h1 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+}
+.forgot__form {
+  border: 1px solid black;
+  padding: 5%;
+  padding-bottom: 2%;
+}
+.forgot__form legend {
+  padding: 0% 8%;
+  margin: 0 auto;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: left;
+  color: #d16e43;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+}
+.forgot__input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.forgot__input input {
+  width: 350px;
+  height: 50px;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  padding: 11px 20px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 12px;
+}
+.forgot__input input::placeholder {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #636262;
+}
+.forgot__input button {
+  width: 350px;
+  height: 50px;
+  background-color: #f0ad90;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 70px;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.forgot__input button:hover {
+  background-color: #d16e43;
+  transition: background-color 0.4s ease-in-out;
+}
+.forgot__form h4 {
+  text-align: center;
+  margin: 1rem 0rem;
+}
+.forgot__form h4 a {
+  color: #000000;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+}
+.forgot__form h4 a:hover {
+  color: #d16e43;
+  text-decoration: underline;
+  transition: color 0.4s ease-in-out;
+}
+
+/*Style for the Mediam Range Devices begins here*/
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .forgot_form h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2rem;
+  }
+  .forgot__input input {
+    width: 280px;
+    height: 50px;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .forgot__input button {
+    width: 280px;
+    height: 50px;
+  }
+}
+
+/*Css for small range device: mobile-view*/
+@media only screen and (max-width: 800px) {
+  .forgot_form_container {
+    gap: 2rem;
+  }
+  .forgot_img_mobile {
+    display: none;
+  }
+  .forgot_form h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+  }
+  .forgot_img {
+    width: 45%;
+    height: 100%;
+  }
+  .forgot_img img {
+    width: 100%;
+    height: 70vh;
+    object-fit: fill;
+  }
+  .forgot__input input {
+    width: 240px;
+    height: 50px;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .forgot__input button {
+    width: 240px;
+    height: 50px;
+    padding: 10px 40px;
+  }
+  .forgot__form legend {
+    padding: 0% 5%;
+    margin: 0 auto;
+    font-size: 23px;
+    line-height: 25px;
+  }
+
+  @media only screen and (min-width: 501px) and (max-width: 700px) {
+    .forgot_form h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 2rem;
+    }
+    .forgot__input input {
+      width: 200px;
+      height: 45px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    .forgot__input button {
+      width: 200px;
+      height: 45px;
+    }
+    .forgot__form legend {
+      font-size: 22px;
+      line-height: 2rem;
+    }
+  }
+
+  /*Style for the Forgot Page begins here*/
+  @media only screen and (max-width: 500px) {
+    .forgot_form_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0rem;
+      padding: 5%;
+      padding-bottom: 3%;
+      font-family: "Josefin Sans", sans-serif;
+      font-style: normal;
+    }
+    .forgot_img_mobile {
+      display: block;
+    }
+    .forgot_img {
+      display: none;
+    }
+    .forgot_img_mobile {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .forgot_img_mobile img {
+      width: 100%;
+      height: auto;
+      object-fit: fill;
+    }
+    .forgot_form {
+      width: 100%;
+      height: auto;
+    }
+    .forgot_form h1 {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 1.5rem;
+      margin-top: 1.9rem;
+    }
+    .forgot__form {
+      border: 1px solid black;
+      padding: 5%;
+    }
+    .forgot__form legend {
+      padding: 0% 0%;
+      margin: 0 auto;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: left;
+      color: #d16e43;
+    }
+    .forgot__input {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .forgot__input input {
+      width: 270px;
+      height: 47px;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+    .forgot__input button {
+      width: 270px;
+      height: 45px;
+    }
+    .forgot__form h4 {
+      text-align: center;
+      margin: 1rem 0rem;
+    }
+    .forgot__form h4 a {
+      color: #000000;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    .forgot__form h4 a:hover {
+      color: #d16e43;
+      text-decoration: underline;
+    }
+  }
+}

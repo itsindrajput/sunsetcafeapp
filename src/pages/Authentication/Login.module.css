@@ -1,0 +1,234 @@
+/*Style for the Login Page begins here*/
+.login_main {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4%;
+  padding-bottom: 3%;
+  gap: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  user-select: none;
+}
+.login_form {
+  width: 50%;
+}
+.login_form h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+}
+.form {
+  border: 1px solid black;
+}
+.form legend {
+  color: #d16e43;
+  font-size: 25px;
+  margin-bottom: 2rem;
+  margin-top: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+}
+.form h4 a {
+  color: rgba(74, 71, 71, 0.75);
+  display: flex;
+  justify-content: end;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 15%;
+}
+.form h4 a:hover {
+  color: #000000;
+}
+.input {
+  width: 415px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.input input {
+  width: 100%;
+  padding: 11px 20px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+.input input::placeholder {
+  color: rgba(42, 40, 40, 0.7);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.login_img {
+  width: 50%;
+}
+.login_img img {
+  width: 100%;
+  height: 52vh;
+  margin-top: 3rem;
+  object-fit: fill;
+}
+.input_login {
+  margin-bottom: 1.5rem;
+}
+.input_login span {
+  color: black;
+  font-size: 18px;
+  margin-right: 0.5rem;
+}
+.input_login a {
+  color: #000000;
+  background-color: #f0ad90;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.input_login a:hover {
+  background-color: #d16e43;
+  transition: background-color 0.4s ease-in-out;
+}
+.submit_btn button {
+  background-color: #f0ad90;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 70px;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.submit_btn button:hover {
+  background-color: #d16e43;
+  transition: background-color 0.4s ease-in-out;
+}
+
+/*Style for the Mediam Range Devices begins here*/
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .input {
+    width: 255px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .input_login span {
+    color: black;
+    font-size: 16px;
+    margin-right: 0rem;
+  }
+  .input_login a {
+    color: #000000;
+    background-color: #f0ad90;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .login_img img {
+    width: 100%;
+    height: 51vh;
+    margin-top: 4rem;
+    object-fit: fill;
+  }
+}
+
+/*Css for small range device: mobile-view*/
+@media only screen and (max-width: 800px) {
+  .login_main {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4%;
+    padding-bottom: 3%;
+    gap: 2rem;
+    font-family: "Josefin Sans", serif;
+    font-style: normal;
+    user-select: none;
+  }
+  .login_form {
+    width: 100%;
+  }
+  .login_form h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    margin: 1.2rem;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 400px) {
+    .login_form h1 {
+      font-size: 35px;
+      margin: 1.5rem;
+    }
+  }
+  .form {
+    border: 1px solid black;
+  }
+  .form legend {
+    color: #d16e43;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+  }
+  .form h4 a {
+    color: rgba(74, 71, 71, 0.75);
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .form h4 a:hover {
+    color: #000000;
+  }
+  .input {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .login_img {
+    width: 100%;
+  }
+  .login_img img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .input_login {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .input_login span {
+    color: black;
+    font-size: 18px;
+    margin-right: 0.5rem;
+  }
+  .input_login a {
+    color: #000000;
+    background-color: #f0ad90;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 10px;
+    width: 201px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  .input_login a:hover {
+    background-color: #d16e43;
+  }
+}

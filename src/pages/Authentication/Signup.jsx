@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Signup.module.css";
 import Navbar from "../../components/Menu/Navbar";
+import { NavLink } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -56,7 +57,7 @@ const Signup = () => {
             </div>
             <div class={style.input_sign}>
               <span>Already have an Acount? </span>
-              <a href="../html/login.html"> Sign In</a>
+              <NavLink to="/login">Sign In</NavLink>
             </div>
           </form>
         </div>
