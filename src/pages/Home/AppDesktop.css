@@ -587,7 +587,12 @@ h1 {
 .motivation {
   display: flex;
   flex-direction: column;
-  background-image: url("../blog-images/morning.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(40, 27, 16, 0.5),
+      rgba(40, 27, 16, 0.5)
+    ),
+    url("../blog-images/morning.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -638,6 +643,9 @@ h1 {
   border-bottom-right-radius: 0px;
   padding-left: 10px;
   font-size: 1.1rem;
+}
+.subscribe input::placeholder {
+  color: #000000;
 }
 .subscribe .submit-btn {
   background-color: #bba6a6;
