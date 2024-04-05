@@ -1,0 +1,336 @@
+.mobileView {
+  display: none;
+}
+.beverage_container {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.beverageCard {
+  width: 350px;
+}
+.beverageCard img {
+  width: 100%;
+  height: 290px;
+  border: none;
+  border-radius: 50%;
+  padding: 0 30px;
+  user-select: none;
+}
+.beverageCard h2 {
+  font-size: 1.3rem;
+  background-color: #d16e43;
+  margin: 30px 20px;
+  margin-bottom: 40px;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.card_item {
+  list-style-type: none;
+}
+.card_item li {
+  margin-top: 1rem;
+}
+.card_item li::after {
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 3px;
+  background-color: #3c2d25;
+}
+.card_item li:nth-last-child(1)::after {
+  display: none;
+}
+.card_item li img {
+  display: none;
+}
+.item_layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+}
+.item_layout > :nth-child(1) {
+  text-align: left;
+  width: 70%;
+  height: 50px;
+  margin-top: 5px;
+}
+.item_layout > :nth-child(2) {
+  text-align: center;
+}
+.item_layout p {
+  margin-top: 10px;
+  word-wrap: break-word;
+  opacity: 0.7;
+}
+.item_layout button {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: #c9f7ca;
+  cursor: pointer;
+}
+.item_layout button:hover {
+  background-color: #93ef94;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
+  .beverage_container {
+    width: 95%;
+    margin: 0 auto;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  .beverageCard {
+    width: 250px;
+  }
+  .beverageCard img {
+    width: 100%;
+    height: 220px;
+    border: none;
+    border-radius: 50%;
+    padding: 0 10px;
+    user-select: none;
+  }
+
+  .item_layout p {
+    margin-top: 10px;
+    word-wrap: break-word;
+    opacity: 0.7;
+    font-size: 1rem;
+  }
+  .beverageCard h2 {
+    font-size: 1.2rem;
+    background-color: #d16e43;
+    margin: 20px 10px;
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 1.5rem;
+    text-align: center;
+  }
+  .card_item li::after {
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 3px;
+    background-color: #3c2d25;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .beverage_container {
+    width: 98%;
+    margin: 0 auto;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+  .beverageCard {
+    width: 190px;
+  }
+  .beverageCard img {
+    width: 100%;
+    height: 170px;
+    border: none;
+    border-radius: 50%;
+    padding: 0 10px;
+    user-select: none;
+  }
+  .beverageCard h2 {
+    font-size: 1.2rem;
+    background-color: #d16e43;
+    font-weight: 600;
+    margin: 20px 10px;
+    margin-bottom: 30px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 1.5rem;
+    text-align: center;
+  }
+  .item_layout h3 {
+    font-size: 1.1rem;
+  }
+  .item_layout p {
+    margin-top: 10px;
+    word-wrap: break-word;
+    opacity: 0.7;
+    font-size: 0.9rem;
+  }
+  .card_item li::after {
+    position: absolute;
+    content: "";
+    width: 185px;
+    height: 2px;
+    margin-top: 0rem;
+    background-color: #3c2d25;
+  }
+  .item_layout button {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileView {
+    display: block;
+  }
+  .beverage_container {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .beverageCard {
+    width: 100%;
+    position: relative;
+  }
+  .beverageCard img {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 0%;
+    padding: 0px;
+    user-select: none;
+    object-fit: cover;
+    object-position: center;
+    background-color: #848382;
+    opacity: 0.5;
+  }
+  .beverageCard h2 {
+    opacity: 1;
+    position: absolute;
+    font-size: 1.8rem;
+    word-spacing: 20rem;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    border: none;
+    border-radius: 0rem;
+    text-align: left;
+  }
+  .card_item {
+    display: none;
+  }
+  .mobileView li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+  }
+  .mobileView li .orderItemL {
+    padding: 5% 0%;
+  }
+  .beverageCard:first-child .mobileView li {
+    width: 85%;
+    margin: 0 auto;
+    padding: 5% 0%;
+    padding-bottom: 0%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .beverageCard:first-child .mobileView li .orderItemL {
+    padding: 0% 0%;
+  }
+  .beverageCard:first-child .mobileView li::after {
+    position: absolute;
+    content: "";
+    width: 85%;
+    height: 2px;
+    opacity: 0.6;
+    background-color: #ffffff;
+    margin-top: 9rem;
+  }
+  .orderpara {
+    width: 90%;
+    padding-top: 10px;
+    font-size: 1rem;
+    opacity: 0.7;
+  }
+  .orderPrice {
+    padding-top: 10px;
+  }
+  .orderItemR img {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+  }
+  .orderItemR div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: -4.5rem;
+    margin-left: -0.5rem;
+    width: 50px;
+  }
+  .heartIcon {
+    color: #fd3018;
+  }
+  .heartIcon:hover {
+    color: #1bb125;
+  }
+  .countBtn {
+    font-size: 1rem;
+    color: black;
+    width: 75px;
+    padding: 2px 0px;
+    margin-left: 31px;
+    text-align: center;
+    background: #d9d9d9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+  }
+  .countBtn button {
+    color: black;
+    background-color: #d9d9d9;
+    box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+  }
+  .countBtn button:hover {
+    color: #03700a;
+  }
+  .mobileView li::after {
+    position: absolute;
+    content: "";
+    width: 85%;
+    height: 2px;
+    opacity: 0.6;
+    background-color: #ffffff;
+    margin-top: 7.5rem;
+  }
+  .mobileView li:nth-last-child(1)::after {
+    display: none;
+  }
+}
