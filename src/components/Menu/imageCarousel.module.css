@@ -1,0 +1,153 @@
+/*Styling for the Best Offers begins here*/
+.carouselContainer {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 3rem 0rem 4rem 0rem;
+  margin-right: 3.4%;
+}
+.image_carousel {
+  min-width: 100%;
+  height: 400px;
+  flex: 0 0 auto;
+  gap: 3.4%;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.image_carousel img {
+  min-width: 30%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+.carouselBtn {
+  position: absolute;
+  display: inline-block;
+  width: 45px;
+  margin: 0 auto;
+  height: 100px;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 150px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.prevBtn {
+  left: 20px;
+}
+.nextBtn {
+  right: 20px;
+}
+.carouselBtn:hover {
+  width: 45px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .carouselContainer {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 0rem 3rem 0rem;
+  }
+  .image_carousel {
+    min-width: 100%;
+    height: 300px;
+    flex: 0 0 auto;
+    gap: 1.4%;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .image_carousel img {
+    min-width: 33%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+  }
+  .carouselBtn {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    margin: 0 auto;
+    height: 100px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 100px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  .prevBtn {
+    left: 0px;
+  }
+  .nextBtn {
+    right: 0px;
+  }
+  .carouselBtn:hover {
+    width: 25px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carouselContainer {
+    width: 97%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.5rem 0rem 2rem 0rem;
+  }
+  .image_carousel {
+    min-width: 100%;
+    height: 200px;
+    flex: 0 0 auto;
+    gap: 1.4%;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .image_carousel img {
+    min-width: 33%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+  }
+  .carouselBtn {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    margin: 0 auto;
+    height: 50px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 75px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .prevBtn {
+    left: 0px;
+  }
+  .nextBtn {
+    right: 0px;
+  }
+  .carouselBtn:hover {
+    width: 25px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
+  }
+}

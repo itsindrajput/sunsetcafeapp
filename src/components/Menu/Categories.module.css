@@ -1,0 +1,349 @@
+.categoriesHeading {
+  position: relative;
+  margin: 3% 2%;
+  margin-bottom: 0%;
+}
+.categoriesHeading h1 {
+  width: 400px;
+  height: 60px;
+  padding: 6px 0px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  background-color: #d16e43;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.categoriesHeading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: calc(48% - 200px);
+  height: 1.5px;
+  background-color: #d16e43;
+  z-index: 0;
+}
+.categoriesHeading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: calc(48% - 200px);
+  height: 1.5px;
+  background-color: #d16e43;
+  z-index: 0;
+}
+.categoriesCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3%;
+  user-select: none;
+}
+.batchOne {
+  width: 225px;
+  height: 200px;
+}
+.batchTwo {
+  width: 325px;
+  height: 300px;
+}
+.batchTwo h4,
+.batchOne h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+.batchOne img {
+  width: 100%;
+  height: 180px;
+  border: none;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.batchTwo img {
+  width: 100%;
+  height: 280px;
+  border: none;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.batchOne img:hover,
+.batchTwo img:hover {
+  transform: scale(1.03);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.exploreBtn {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 5.5rem;
+  position: relative;
+}
+.exploreBtn a {
+  text-decoration: none;
+  font-family: "Aleo", serif;
+  color: #ffffff;
+  background-color: #cb5f5f;
+  font-size: 35px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.exploreBtn a:hover {
+  background-color: #ce4c4c;
+}
+
+/*Styling For The Tablet/ipad Begins Here*/
+@media only screen and (min-width: 750px) and (max-width: 955px) {
+  /*Styling for the Other Categories Begins Here*/
+  .categoriesHeading {
+    position: relative;
+    margin: 3% 2%;
+    margin-bottom: 0%;
+  }
+  .categoriesHeading h1 {
+    width: 250px;
+    height: 50px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    background-color: #d16e43;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+  }
+  .categoriesHeading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: calc(50% - 120px);
+    height: 1.5px;
+    background-color: #ffffff;
+    z-index: 0;
+  }
+  .categoriesHeading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(50% - 120px);
+    height: 1.5px;
+    background-color: #ffffff;
+    z-index: 0;
+  }
+  .categoriesCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5% 1%;
+    user-select: none;
+  }
+  .batchOne {
+    width: 24%;
+    height: 140px;
+  }
+  .batchTwo {
+    width: 24%;
+    height: 140px;
+  }
+  .batchTwo h4,
+  .batchOne h4 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .batchOne img {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+  .batchTwo img {
+    width: 100%;
+    height: 120px;
+    border: none;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+  .exploreBtn {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+  }
+  .exploreBtn a {
+    text-decoration: none;
+    font-family: "Aleo", serif;
+    color: #ffffff;
+    background-color: #cb5f5f;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+}
+
+/*Styling For The Mediam Range Devices Begins Here*/
+@media only screen and (min-width: 800px) and (max-width: 1236px) {
+  .categoriesCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3% 1%;
+    user-select: none;
+  }
+  .batchOne {
+    width: 190px;
+    height: 240px;
+  }
+  .batchTwo {
+    width: 190px;
+    height: 240px;
+  }
+  .batchTwo h4,
+  .batchOne h4 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 23.5px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .batchOne img {
+    width: 100%;
+    height: 140px;
+    border: none;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .batchTwo img {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .exploreBtn {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+}
+
+/*Styling For The Small Range Devices Begins Here*/
+@media only screen and (max-width: 750px) {
+  .categoriesHeading {
+    position: relative;
+    margin: 0% 2%;
+  }
+  .categoriesHeading h1 {
+    width: 250px;
+    height: 50px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #d16e43;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+  }
+  .categoriesHeading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: calc(50% - 120px);
+    height: 1.5px;
+    background-color: #ffffff;
+    z-index: 0;
+  }
+  .categoriesHeading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(50% - 120px);
+    height: 1.5px;
+    background-color: #ffffff;
+    z-index: 0;
+  }
+  .categoriesCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5% 1%;
+    user-select: none;
+  }
+  .batchOne {
+    width: 24%;
+    height: 165px;
+  }
+  .batchTwo {
+    width: 24%;
+    height: 165px;
+  }
+  .batchTwo h4,
+  .batchOne h4 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .batchOne img {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+  .batchTwo img {
+    width: 100%;
+    height: 120px;
+    border: none;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+  .exploreBtn {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+  }
+  .exploreBtn a {
+    text-decoration: none;
+    font-family: "Aleo", serif;
+    color: #ffffff;
+    background-color: #cb5f5f;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  .exploreBtn {
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
+  }
+}
