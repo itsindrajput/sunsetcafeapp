@@ -100,7 +100,7 @@ const Explore = () => {
           </div>
         </div>
         <div className={style.see_more_btn}>
-          <NavLink to="/menu/menu1">
+          <NavLink to="/menu1">
             <FontAwesomeIcon
               icon={faAngleDown}
               className={style.see_more_btn_i}

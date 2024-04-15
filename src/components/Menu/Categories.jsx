@@ -36,7 +36,7 @@ const Categories = () => {
         </div>
       </div>
       <div className={style.exploreBtn}>
-        <NavLink to="/menu/explore">EXPLORE</NavLink>
+        <NavLink to="/explore">EXPLORE</NavLink>
       </div>
 
       <div className={style.offerContainer}>
