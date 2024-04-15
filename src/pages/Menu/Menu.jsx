@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Menu/Navbar";
 import Beverages from "../../components/Menu/Beverages";
-import style from "./Menu.module.css";
+import style from "./menu.module.css";
 import Categories from "../../components/Menu/Categories";
 import ImageCarousel from "../../components/Menu/ImageCarousel";
 
