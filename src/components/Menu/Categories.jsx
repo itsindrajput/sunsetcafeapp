@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Categories.module.css";
+import { NavLink } from "react-router-dom";
 
 const Categories = () => {
   return (
@@ -35,9 +36,7 @@ const Categories = () => {
         </div>
       </div>
       <div className={style.exploreBtn}>
-        <a href="explore.html" title="Discover What's On Your Mind?">
-          EXPLORE
-        </a>
+        <NavLink to="/menu/explore">EXPLORE</NavLink>
       </div>
 
       <div className={style.offerContainer}>
